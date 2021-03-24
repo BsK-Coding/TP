@@ -12,7 +12,7 @@ const createDir = (mkdir, dossier) => {
 
 /* Check argument 3 et 4 */
 if (process.argv.length === 3 && process.argv[2] !== 'mkdir') {
-  console.log("cet argument d'inversement de pyramid est incorrecte")
+  console.log("cet argument d'est pas correcte")
   process.exit(1)
 }
 
