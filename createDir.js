@@ -11,12 +11,13 @@ const createDir = (mkdir, dossier) => {
 
 
 /* Check argument 3 et 4 */
-if (process.argv.length === 3 && process.argv[2] !== 'mkdir') {
-  console.log("cet argument d'est pas correcte")
+if (process.argv.length === 3 && process.argv[2] !== 'mkdir' && process.argv[2] == 0) {
+  console.log("cet argument n'est pas correcte")
   process.exit(1)
 }
 
 let mkdir = (process.argv[2])
+// Le dossier sera créé dans le dossier ou l'on se trouve
 let dossier = readlineSync.question('Veuillez entrer le nom du dossier à créer: ')
 
 createDir(mkdir, dossier)
