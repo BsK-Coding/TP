@@ -22,9 +22,8 @@ if (!stats.isDirectory()) {
 /* command LS */
 // fs.readdirSync(path[, options])
 
-let ls = fs.readdirSync(`./${process.argv[2]}`)
+let lsRep = fs.readdirSync(`./${process.argv[2]}`)
 
-for (let elem of ls) {
+for (let elem of lsRep) {
   console.log(elem)
 }
-
